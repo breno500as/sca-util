@@ -11,13 +11,14 @@
 	</parent>
 	<groupId>com.puc.sca.util</groupId>
 	<artifactId>sca-util</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.2</version>
 	<name>sca-util</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+
 
 	<dependencies>
 		<dependency>
@@ -50,5 +51,13 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub OWNER Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/breno500as/sca-util</url>
+		</repository>
+	</distributionManagement>
 
 </project>

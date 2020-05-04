@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Deploy local utilizar no pom.xml:
  * Configurar o spring-boot-maven-plugin, com a configuração <classifier>exec</classifier>
  * 
- *  Passos para dar deploy de uma dependência (package) no github:
+ * Passos para dar deploy de uma dependência (package) no github:
  * 1 - Gerar um token de autorização de acesso na conta do github (o token deve ter as permissões read:packages e write:packages): https://help.github.com/pt/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
  * 2 - Configurar no settings.xml do maven as propriedades: server (com usuário e o token de acesso) e um profile chamado github com o endereço do repositório remoto do github
  * 3 - Configurar no pom da aplicação o distributionManagement apontando para o endereço do repositório remoto do github

@@ -21,7 +21,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
      </server>
  
  
- * 2 - Configurar no settings.xml do maven as propriedades: server (com usuário e o token de acesso) e em cada profile da aplicação apontar também o repositório com o endereço do repositório remoto do github
+ * 2 - Configurar no settings.xml do maven as propriedades: server (com usuário e o token de acesso) e profiles (apontando para o repositório com o endereço do remoto do github)
  * 
  *  <profile>
       <id>hml</id>

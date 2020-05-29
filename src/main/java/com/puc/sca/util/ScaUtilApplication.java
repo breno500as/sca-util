@@ -6,6 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * Aplicação utilitária spring boot utilizada como dependência maven em outras aplicações.
+ * Está aplicação está disponível como package no github ( https://github.com/breno500as/sca-util/packages ) 
+ * e pode ser baixada por qualquer outra aplicação que a instale no maven.
  * 
  * Deploy local utilizar no pom.xml:
  * Configurar o spring-boot-maven-plugin, com a configuração <classifier>exec</classifier>

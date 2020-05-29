@@ -20,7 +20,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
      <server>
       <id>github</id>
       <username>breno500as</username>
-      <password>aa372136d26dbfbf16bd8e3d9123ae3c5df9e7de</password>
+      <password>INSERIR_O_TOKEN_AQUI</password>
      </server>
  
  
@@ -47,7 +47,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
     </profile>
  *  
  * 3 - Configurar no pom dessa aplicação o distributionManagement apontando para o endereço do repositório remoto do github
- * 4 - Executar o deploy da aplicação maven (por linha de comando ou pela ide do eclipse): mvn deploy -Dregistry=https://maven.pkg.github.com/breno500as/sca-util -Dtoken=$3469dd9725e55914e6d98a8236b14215842d8c07
+ * 4 - Executar o deploy da aplicação maven (por linha de comando ou pela ide do eclipse): mvn deploy -Dregistry=https://maven.pkg.github.com/breno500as/sca-util -Dtoken=$INSERIR_O_TOKEN_AQUI
  * 5 - Sempre que for necessário atualizar a aplicação deve se atualizar a <version> da dependência no pom.xml e executar o passo 4 novamente
  * 
  * Exemplos:

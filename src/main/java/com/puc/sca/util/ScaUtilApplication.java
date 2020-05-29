@@ -20,11 +20,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
      <server>
       <id>github</id>
       <username>breno500as</username>
-      <password>9de8b339de4a65ce452e959615f75c86f63f0771</password>
+      <password>aa372136d26dbfbf16bd8e3d9123ae3c5df9e7de</password>
      </server>
  
  
  * 2 - Configurar no settings.xml do maven as propriedades: server (com usuário e o token de acesso) e profiles (apontando para o repositório com o endereço do remoto do github)
+ *  essa configuração serve para baixar a dependência em aplicações que a desejam utilizar.
  * 
  *  <profile>
       <id>hml</id>

@@ -4,11 +4,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 
-/**
- * TODO - Mover classes e pacotes para um repositório local (nexus por exemplo).
- * @author breno
- *
- */
+
 
 public class Alerta implements Serializable {
 

@@ -19,5 +19,6 @@ RUN mvn clean dependency:resolve dependency:resolve-plugins package spring-boot:
 #
 FROM openjdk:8-jdk-alpine as runtime
 RUN mkdir /app
-COPY --from=builder /build/target/*.jar app.jar
-ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar app.jar" ]
+COPY --from=builder /build/target /target
+WORKDIR /target
+ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar sca-util-1.0.7.jar" ]

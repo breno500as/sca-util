@@ -50,6 +50,9 @@
 
 			</plugin>
 		</plugins>
+		 
+         <finalName>sca-util</finalName>
+ 
 	</build>
 
 	<distributionManagement>

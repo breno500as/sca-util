@@ -1,0 +1,26 @@
+language: java
+jdk:
+  - oraclejdk8
+#utilizado para baixar dependencias, configurar ambiente
+before_install:
+  - sudo apt-get update
+  - echo "Let's start Maven Package!!!"
+   #necessário estar no diretório do pom.xml
+  - mvn clean package
+#executa um script
+script:
+  - docker-compose build
+#antes do deploy é necessário fazer o login no docker hub, utilizando as variáveis de ambiente configuradas na página do travis, no repositório específico.
+before_deploy:
+  - echo $DOCKER_PASSWORD | docker login --username $DOCKER_USERNAME --password-stdin
+deploy:
+  provider: script
+  script:
+    docker tag sca-util:1.0 $DOCKER_USERNAME/sca-util:$TRAVIS_JOB_ID;
+    docker tag sca-util:1.0 $DOCKER_USERNAME/sca-util:1.0;
+    docker push $DOCKER_USERNAME/sca-util:$TRAVIS_JOB_ID;
+    docker push $DOCKER_USERNAME/sca-util:1.0;
+  on:
+    brach: master
+notifications:
+  email: false

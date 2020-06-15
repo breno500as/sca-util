@@ -9,7 +9,8 @@ before_install:
   - mvn clean package
 #executa um script
 script:
-  - docker-compose build
+  - docker build -t sca-util:1.0 .
+  - docker run -p 8080:8080 sca-util
 #antes do deploy é necessário fazer o login no docker hub, utilizando as variáveis de ambiente configuradas na página do travis, no repositório específico.
 before_deploy:
   - echo $DOCKER_PASSWORD | docker login --username $DOCKER_USERNAME --password-stdin

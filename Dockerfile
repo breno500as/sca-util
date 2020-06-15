@@ -12,7 +12,7 @@ FROM maven:3.5-jdk-8-alpine as builder
 RUN mkdir /build
 COPY --from=git /app/sca-util /build
 WORKDIR /build
-RUN mvn clean dependency:resolve dependency:resolve-plugins package spring-boot:repackage -DskipTests 
+RUN mvn clean package
  
 #
 # Package stage

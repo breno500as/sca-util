@@ -4,10 +4,9 @@ jdk:
 #utilizado para baixar dependencias, configurar ambiente
 before_install:
   - sudo apt-get update
-  - echo "Let's start Maven Package!!!"
    #necessário estar no diretório do pom.xml
   - mvn clean package
-#executa um script
+#executa um script de instalação
 script:
   - docker build -t sca-util:1.0 .
   - docker run sca-util:1.0

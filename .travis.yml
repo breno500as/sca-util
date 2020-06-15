@@ -1,6 +1,6 @@
 language: java
 jdk:
-  - oraclejdk8
+  - oraclejdk11
 #utilizado para baixar dependencias, configurar ambiente
 before_install:
   - sudo apt-get update

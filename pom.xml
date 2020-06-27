@@ -18,6 +18,42 @@
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+	
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<activatedProperties>dev</activatedProperties>
+			</properties>
+		</profile>
+		<profile>
+			<id>test</id>
+			<properties>
+				<activatedProperties>test</activatedProperties>
+			</properties>
+		</profile>
+		<profile>
+			<id>hml</id>
+			<properties>
+				<activatedProperties>hml</activatedProperties>
+			</properties>
+		</profile>
+		<profile>
+			<id>prd-amazon</id>
+			<properties>
+				<activatedProperties>prd-amazon</activatedProperties>
+			</properties>
+		</profile>
+		<profile>
+			<id>prd-heroku</id>
+			<properties>
+				<activatedProperties>prd-heroku</activatedProperties>
+			</properties>
+		</profile>
+	</profiles>
 
 
 	<dependencies>

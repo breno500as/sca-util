@@ -1,4 +1,4 @@
-package com.puc.util.pojo;
+package com.puc.sca.util.pojo;
 
 public enum NivelAlerta {
 
